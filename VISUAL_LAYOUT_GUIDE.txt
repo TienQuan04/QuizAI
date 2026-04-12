@@ -1,0 +1,359 @@
+PROFILE SCREEN - VISUAL LAYOUT GUIDE
+=====================================
+
+COMPLETE VISUAL STRUCTURE
+==========================
+
+┌─────────────────────────────────────┐
+│   GRADIENT HEADER (Blue → Purple)   │  Height: 280dp
+│   ┌────────────────────────────────┐│
+│   │      [Avatar Circle] 100x100   ││  Centered
+│   │          (with icon)           ││
+│   ├────────────────────────────────┤│
+│   │         MY PROFILE             ││  28sp Bold White
+│   │           (Title)              ││
+│   ├────────────────────────────────┤│
+│   │           @username            ││  16sp Light Gray
+│   │        (from database)          ││
+│   └────────────────────────────────┘│
+└─────────────────────────────────────┘
+           ↓
+     Light Gray Background (#F5F5F5)
+           ↓
+┌─────────────────────────────────────┐  Padding: 16dp
+│    STATISTICS CARD #1 (Blue)        │  Elevation: 6dp
+│  ┌─────────────────────────────────┐│  Corner Radius: 16dp
+│  │ [📋]  Label: Total Quizzes      ││  Margin Bottom: 12dp
+│  │ BG:   Value: [Large Number]     ││
+│  │ Blue  28sp Bold Blue            ││
+│  │       (from DB)                  ││
+│  └─────────────────────────────────┘│
+└─────────────────────────────────────┘
+           ↓
+┌─────────────────────────────────────┐
+│  STATISTICS CARD #2 (Green)         │
+│  ┌─────────────────────────────────┐│
+│  │ [✓]   Label: Correct Answers    ││
+│  │ BG:   Value: [Large Number]     ││
+│  │ Green 28sp Bold Green           ││
+│  │       (from DB)                  ││
+│  └─────────────────────────────────┘│
+└─────────────────────────────────────┘
+           ↓
+┌─────────────────────────────────────┐
+│  STATISTICS CARD #3 (Orange)        │
+│  ┌─────────────────────────────────┐│
+│  │ [%]   Label: Accuracy Rate      ││
+│  │ BG:   Value: [Large Percentage] ││
+│  │Orange 28sp Bold Orange          ││
+│  ├─────────────────────────────────┤│
+│  │ ▓▓▓▓░░░░░░░  (Progress Bar)    ││
+│  │ 8dp height, Orange fill         ││
+│  └─────────────────────────────────┘│
+└─────────────────────────────────────┘
+           ↓
+┌─────────────────────────────────────┐
+│  [  VIEW HISTORY BUTTON (Blue)   ]  │
+│  Height: 50dp, Margin: 8dp          │
+└─────────────────────────────────────┘
+           ↓
+┌─────────────────────────────────────┐
+│  [    LOGOUT BUTTON (Red)        ]  │
+│  Height: 50dp, Margin: 8dp          │
+└─────────────────────────────────────┘
+
+
+DETAILED CARD LAYOUT
+====================
+
+CARD (Horizontal Layout):
+┌─────────────────────────────────────┐
+│ ┌──────┐  ┌─────────────────────┐   │
+│ │      │  │ Label Text (13sp)   │   │
+│ │ Icon │  │ #9E9E9E Gray        │   │
+│ │ 60x  │  ├─────────────────────┤   │
+│ │60dp  │  │ [Value] (28sp)      │   │
+│ │      │  │ Bold Color          │   │
+│ └──────┘  └─────────────────────┘   │
+│ Margin:   Padding: 20dp all sides   │
+│ End:16dp                             │
+└─────────────────────────────────────┘
+
+Icon Containers (60x60dp):
+- Blue:   Light Blue (#E3F2FD) - Quizzes
+- Green:  Material Green (#4CAF50) - Correct
+- Orange: Material Orange (#FF9800) - Accuracy
+
+
+COLOR SCHEME
+============
+
+HEADER GRADIENT (135° angle):
+╔════════════════════════════════╗
+║ ┌──────────────────────────┐   ║
+║ │                          │   ║
+║ │   BLUE                   │   ║
+║ │   #2196F3                │   ║
+║ │                          │   ║
+║ ├──────────────────────────┤   ║
+║ │                          │   ║
+║ │   PURPLE                 │   ║
+║ │   #9C27B0                │   ║
+║ │                          │   ║
+║ └──────────────────────────┘   ║
+╚════════════════════════════════╝
+
+CARD BACKGROUNDS:
+- Main Cards: #FFFFFF (White)
+- Container: #F5F5F5 (Light Gray)
+
+ICON BACKGROUNDS:
+- Blue (Quizzes): #E3F2FD (Light Blue)
+- Green (Correct): #4CAF50 (Full Green)
+- Orange (Accuracy): #FF9800 (Full Orange)
+
+TEXT COLORS:
+- Header Title: #FFFFFF (White)
+- Username: #E0E0E0 (Light Gray)
+- Value Text: Matching icon color
+- Label Text: #9E9E9E (Medium Gray)
+
+BUTTON COLORS:
+- View History: #2196F3 (Blue)
+- Logout: #F44336 (Red)
+
+
+SPACING & DIMENSIONS
+====================
+
+VERTICAL SPACING:
+Header Height:           280dp
+Card Height:             Wrap Content (~90dp each)
+Button Height:           50dp
+Progress Bar Height:     8dp
+
+HORIZONTAL SPACING:
+Header Padding:          24dp all
+Card Padding:            20dp all
+Icon-to-Content Gap:     16dp
+Container Padding:       16dp
+
+MARGIN SPACING:
+Card Margin Bottom:      12dp
+Avatar Margin Bottom:    16dp
+Button Margin:           8dp all
+
+CORNER RADIUS:
+Main Cards:              16dp
+Icon Containers:         12dp
+Progress Bar:            4dp
+Avatar Circle:           Oval (circle)
+
+
+ICON DESIGN
+===========
+
+Avatar (100x100dp):
+┌────────────────────┐
+│   ◯  (white bg)    │  Oval shape
+│  Circle icon       │  Gray stroke
+│  (person silhouette) │
+└────────────────────┘
+Icon: #2196F3 (Blue)
+
+Card Icons (60x60dp):
+┌──────────────────┐
+│  Icon Container  │  Rounded 12dp
+│  (colored bg)    │
+│   Emoji/Symbol   │  Emoji or vector
+└──────────────────┘
+
+Emojis Used:
+- 📋 (Clipboard) - Quizzes
+- ✓ (Checkmark) - Correct (white text)
+- % (Percent) - Accuracy (white text, bold)
+
+
+TYPOGRAPHY HIERARCHY
+====================
+
+Header Title (MY PROFILE):
+- Size: 28sp
+- Weight: Bold
+- Color: #FFFFFF
+- Line Height: Standard
+
+Username (User display):
+- Size: 16sp
+- Weight: Regular
+- Color: #E0E0E0
+- Line Height: Standard
+
+Card Values (Numbers):
+- Size: 28sp
+- Weight: Bold
+- Color: Accent color (Blue/Green/Orange)
+- Family: Default (sans-serif)
+
+Card Labels:
+- Size: 13sp
+- Weight: Regular
+- Color: #9E9E9E
+- Family: Default (sans-serif)
+
+Button Text:
+- Size: 14sp
+- Weight: Bold
+- Color: #FFFFFF (on colored button)
+- Transform: UPPERCASE
+
+
+ANIMATION & INTERACTION
+=======================
+
+Progress Bar:
+- Max: 100
+- Fills with orange color
+- Matches accuracy percentage
+- Example: 75% accuracy = 75 progress
+
+Button Press:
+- Standard Android ripple effect
+- View History → Opens HistoryActivity
+- Logout → Clears data and goes to LoginActivity
+
+Scroll Behavior:
+- ScrollView handles overflow
+- Header stays in view
+- Cards scroll smoothly
+- Buttons at bottom
+
+RESPONSIVE BEHAVIOR
+===================
+
+Different Screen Sizes:
+- Small phones (320dp): Cards full width with margins
+- Medium phones (360-480dp): Optimal layout
+- Large phones (600dp+): Same layout, more comfortable spacing
+- Tablets: Full width usage with max width constraints
+
+Orientation:
+- Portrait: Primary design (all layouts)
+- Landscape: ScrollView handles content overflow
+- Maintains readability in both modes
+
+
+ACCESSIBILITY FEATURES
+======================
+
+✓ High Contrast:
+  - Header text white on gradient background
+  - Card values use accent colors
+  - Labels use medium gray for readability
+
+✓ Text Size:
+  - Minimum 13sp for labels
+  - 28sp for important values
+  - 16sp for secondary info
+
+✓ Touch Targets:
+  - Buttons 50dp height (minimum 48dp)
+  - Adequate spacing between interactive elements
+
+✓ Content Description:
+  - Clear labels for all statistics
+  - Descriptive button text
+  - Progress bar shows numeric value
+
+
+DEVICE COMPATIBILITY
+====================
+
+Minimum API:
+- CardView: Requires AndroidX CardView library
+- ProgressBar: Available in all versions
+- Drawables: XML shapes supported in all versions
+
+Tested On:
+- Android 5.0+ (API 21+)
+- All screen sizes and densities
+- Portrait and landscape orientations
+
+Dependencies Required:
+- androidx.cardview:cardview
+
+
+PERFORMANCE CONSIDERATIONS
+==========================
+
+✓ Vector Drawables: Scalable, no DPI variants needed
+✓ XML Shapes: No image assets, minimal file size
+✓ Card Elevation: Hardware acceleration recommended
+✓ Progress Bar: Lightweight widget
+✓ ScrollView: Efficient for small content heights
+
+Memory Usage:
+- Minimal memory footprint
+- No large image assets
+- Only necessary views in layout
+
+
+CUSTOMIZATION GUIDE
+===================
+
+To Change Colors:
+1. Update gradient_header.xml for header colors
+2. Modify stat_icon_bg_*.xml for icon backgrounds
+3. Edit activity_profile.xml hex color values
+4. Update button colors in buttons section
+
+To Change Dimensions:
+1. Header height: Change 280dp in LinearLayout
+2. Card corners: Modify cardCornerRadius value
+3. Icon size: Change 60x60dp dimensions
+4. Padding: Adjust padding values in containers
+
+To Add New Cards:
+1. Copy CardView block in activity_profile.xml
+2. Create new icon background drawable
+3. Update ProfileActivity.java to populate values
+4. Add corresponding database queries if needed
+
+
+FILE LOCATIONS
+==============
+
+Layout File:
+app/src/main/res/layout/activity_profile.xml
+
+Drawable Files:
+app/src/main/res/drawable/
+  ├── gradient_header.xml
+  ├── avatar_circle_bg.xml
+  ├── ic_avatar_placeholder.xml
+  ├── stat_icon_bg_blue.xml
+  ├── stat_icon_bg_green.xml
+  ├── stat_icon_bg_orange.xml
+  └── progress_bar_bg.xml
+
+Java Files:
+app/src/main/java/com/example/QuizzAI/ProfileActivity.java
+
+Total Files: 1 layout + 7 drawables + 1 activity = 9 files
+
+
+BUILD VERIFICATION
+===================
+
+After implementing, verify:
+1. No compilation errors
+2. All drawable resources found
+3. Layout preview displays correctly
+4. CardView import resolved
+5. Progress bar renders
+6. Buttons clickable
+7. Text displays with correct colors
+8. Gradient header smooth transition
+9. Avatar icon visible
+10. App runs on device/emulator
+

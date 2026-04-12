@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuizzAI</string>
+    <string name="date_format">%1$d/%2$d/%3$d</string>
+    <string name="score_format">Bạn đúng %1$d/%2$d câu!</string>
+    <string name="result_perfect">Tuyệt vời! 🌟🌟🌟</string>
+    <string name="result_good">Giỏi lắm! 🌟🌟</string>
+    <string name="result_medium">Tiếp tục cố gắng! 🌟</string>
+    <string name="result_low">Đừng bỏ cuộc nhé! 💪</string>
+    <string name="feedback_generating">Đang tạo nhận xét AI...</string>
+    <string name="feedback_title">Nhận xét của AI</string>
+    <string name="feedback_no_questions">Không có câu hỏi để đánh giá.</string>
+</resources>

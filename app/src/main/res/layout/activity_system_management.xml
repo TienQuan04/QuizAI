@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hệ thống QuizzAI"
+            android:textColor="#333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- DATABASE STATS -->
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thống kê cơ sở dữ liệu"
+                    android:textColor="#4A6CF7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtStatUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Người dùng: 0" />
+
+                <TextView
+                    android:id="@+id/txtStatQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Câu hỏi trong kho: 0" />
+
+                <TextView
+                    android:id="@+id/txtStatHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lượt làm bài: 0" />
+
+                <TextView
+                    android:id="@+id/txtStatRequests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu mở khóa: 0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- MAINTENANCE TOOLS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Công cụ bảo trì"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnClearAIQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF9800"
+            android:text="Dọn dẹp câu hỏi AI chưa duyệt"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnClearHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F44336"
+            android:text="Xóa toàn bộ lịch sử thi"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnCheckAI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Kiểm tra kết nối Gemini AI"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#DDD" />
+
+        <Button
+            android:id="@+id/btnResetSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#000000"
+            android:text="RESET HỆ THỐNG (CẨN TRỌNG)"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Phiên bản 2.0.1 (Stable)"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>

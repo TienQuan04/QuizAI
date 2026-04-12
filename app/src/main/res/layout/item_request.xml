@@ -1,0 +1,91 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- HEADER: Avatar + Username -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:text="User"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- MESSAGE -->
+        <TextView
+            android:id="@+id/txtReason"
+            android:text="Lý do mở khóa..."
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- STATUS -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:text="⏳ Đang chờ"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- BUTTON -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:text="✔ Duyệt"
+                android:textAllCaps="false"
+                android:backgroundTint="#22C55E"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"/>
+
+            <Button
+                android:id="@+id/btnReject"
+                android:text="✖ Từ chối"
+                android:textAllCaps="false"
+                android:backgroundTint="#EF4444"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

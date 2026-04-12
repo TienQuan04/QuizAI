@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Chào Admin"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Thống kê hệ thống"
+                    android:textColor="#CCFFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- NÚT ĐĂNG XUẤT -->
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:src="@android:drawable/ic_lock_power_off"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Đăng xuất" />
+
+            <ImageView
+                android:src="@android:drawable/sym_def_app_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <!-- REQUEST BUTTON WITH BADGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="6dp">
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:text="Yêu cầu mở khóa"
+                android:backgroundTint="#F59E0B"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!-- BADGE  -->
+            <TextView
+                android:id="@+id/txtBadge"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="end|top"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_badge"
+                android:textColor="#FFF"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- STATS -->
+        <HorizontalScrollView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- CARD USER -->
+                <LinearLayout
+                    android:background="@drawable/bg_card"
+                    android:padding="12dp"
+                    android:layout_margin="6dp"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Tổng User"
+                            android:textColor="#666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtTotalUser"
+                            android:text="0"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- CARD QUIZ -->
+                <LinearLayout
+                    android:background="@drawable/bg_card"
+                    android:padding="12dp"
+                    android:layout_margin="6dp"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Tổng Quiz"
+                            android:textColor="#666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtTotalQuiz"
+                            android:text="0"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- CARD QUESTION -->
+                <LinearLayout
+                    android:background="@drawable/bg_card"
+                    android:padding="12dp"
+                    android:layout_margin="6dp"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Ngân hàng câu hỏi"
+                            android:textColor="#666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtTotalQuestion"
+                            android:text="0"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- CHART -->
+        <LinearLayout
+            android:background="@drawable/bg_card"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!-- ACTION -->
+        <TextView
+            android:text="Hoạt động nhanh"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnUser"
+                    android:text="Quản lý người dùng"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:backgroundTint="#4A6CF7"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"/>
+
+                <Button
+                    android:id="@+id/btnQuestion"
+                    android:text="Quản lý câu hỏi"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:backgroundTint="#4A6CF7"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnResult"
+                    android:text="Quản lý kết quả"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:backgroundTint="#4A6CF7"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"/>
+
+                <Button
+                    android:id="@+id/btnSystem"
+                    android:text="Hệ thống"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:backgroundTint="#4A6CF7"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
