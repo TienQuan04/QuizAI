@@ -60,22 +60,6 @@
             </PendingDiffInfo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/stat_icon_bg_green.xml">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/drawable/stat_icon_bg_green.xml" />
-              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:shape=&quot;rectangle&quot;&gt;&#10;    &lt;solid android:color=&quot;#4CAF50&quot; /&gt;&#10;    &lt;corners android:radius=&quot;12dp&quot; /&gt;&#10;&lt;/shape&gt;&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/stat_icon_bg_orange.xml">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/drawable/stat_icon_bg_orange.xml" />
-              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:shape=&quot;rectangle&quot;&gt;&#10;    &lt;solid android:color=&quot;#FF9800&quot; /&gt;&#10;    &lt;corners android:radius=&quot;12dp&quot; /&gt;&#10;&lt;/shape&gt;&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

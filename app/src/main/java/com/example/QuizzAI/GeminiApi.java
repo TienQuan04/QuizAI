@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class GeminiApi {
 
-    private static final String GEMINI_API_KEY = "AIzaSyDskBLGvRiUb5x6aLyKTA_Tb_Aog0ce56o";
+    private static final String GEMINI_API_KEY = "keyyy";
 
     private static final String GEMINI_API_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
