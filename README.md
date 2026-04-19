@@ -1,6 +1,6 @@
-📱 KAHYEET! - Ứng dụng Trắc nghiệm kết hợp AI
+QuizAI - Ứng dụng Trắc nghiệm kết hợp AI
 
-KAHYEET! là một ứng dụng trắc nghiệm học tập trên Android, cho phép người dùng tạo bài kiểm tra theo nhiều chủ đề khác nhau. Hệ thống tự động chấm điểm và sử dụng AI để phân tích kết quả, từ đó đưa ra nhận xét và gợi ý cải thiện việc học.
+QuizAI là một ứng dụng trắc nghiệm học tập trên Android, cho phép người dùng tạo bài kiểm tra theo nhiều chủ đề khác nhau. Hệ thống tự động chấm điểm và sử dụng AI để phân tích kết quả, từ đó đưa ra nhận xét và gợi ý cải thiện việc học.
 
 🚀 Tính năng chính
 Tạo câu hỏi trắc nghiệm theo chủ đề bằng AI
@@ -19,6 +19,9 @@ Xử lý dữ liệu: Parcelable, AsyncTask
 Clone repository:
 
 git clone https://github.com/TienQUan04/kahyeet.git
+
+
+Các bước:
 
 Mở project bằng Android Studio
 Cấu hình API Key trong file GeminiApi.java
