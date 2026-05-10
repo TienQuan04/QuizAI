@@ -16,10 +16,6 @@ API AI: Gemini (Google Generative Language API)
 Xử lý dữ liệu: Parcelable, AsyncTask
 ⚙️ Hướng dẫn cài đặt
 
-Clone repository:
-
-git clone https://github.com/TienQUan04/kahyeet.git
-
 
 Các bước:
 
