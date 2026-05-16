@@ -9,4 +9,31 @@
     <string name="feedback_generating">Đang tạo nhận xét AI...</string>
     <string name="feedback_title">Nhận xét của AI</string>
     <string name="feedback_no_questions">Không có câu hỏi để đánh giá.</string>
+
+    <!-- Admin Strings -->
+    <string name="admin_title">Chào Admin</string>
+    <string name="admin_stats">Thống kê hệ thống</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="request_unlock">Yêu cầu mở khóa</string>
+    <string name="total_user">Tổng User</string>
+    <string name="total_quiz">Tổng Quiz</string>
+    <string name="total_question">Ngân hàng câu hỏi</string>
+    <string name="quick_action">Hoạt động nhanh</string>
+    <string name="user_mgmt">Quản lý người dùng</string>
+    <string name="question_mgmt">Quản lý câu hỏi</string>
+    <string name="result_mgmt">Quản lý kết quả</string>
+    <string name="system_mgmt">Hệ thống</string>
+
+    <string name="analytics_title">Phân tích kết quả</string>
+    <string name="ai_consultant">Trợ lý AI Phân tích</string>
+    <string name="search_hint">Tìm kiếm...</string>
+    <string name="all_subject">Tất cả</string>
+
+    <string name="system_title">Hệ thống QuizzAI</string>
+    <string name="db_stats">Thống kê cơ sở dữ liệu</string>
+    <string name="maintenance">Công cụ bảo trì</string>
+    <string name="clear_ai">Dọn dẹp câu hỏi AI</string>
+    <string name="clear_history">Xóa toàn bộ lịch sử</string>
+    <string name="check_ai">Kiểm tra kết nối AI</string>
+    <string name="reset_system">RESET HỆ THỐNG</string>
 </resources>
