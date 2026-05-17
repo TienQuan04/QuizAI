@@ -41,7 +41,7 @@ public class DetailActivity extends AppCompatActivity {
             int correct = c.getInt(c.getColumnIndexOrThrow("correct_answer"));
             int user = c.getInt(c.getColumnIndexOrThrow("user_answer"));
 
-            // ✅ FIX: chỉ +1 cho correct
+            //  FIX: chỉ +1 cho correct
             correct += 1;
 
             // ❗ giữ nguyên -1 nếu không trả lời
@@ -73,7 +73,7 @@ public class DetailActivity extends AppCompatActivity {
 
                 TextView tvUpdated = new TextView(this);
                 
-                // 🔥 LẤY ĐÁP ÁN MỚI NHẤT
+                //  LẤY ĐÁP ÁN MỚI NHẤT
                 int latestCorrect = db.getLatestCorrectAnswer(question);
                 String label = "";
                 if(latestCorrect == 0) label = "A";
@@ -120,7 +120,7 @@ public class DetailActivity extends AppCompatActivity {
             addOption("C", C, 3, correct, user);
             addOption("D", D, 4, correct, user);
 
-            // 🔥 HIỂN THỊ TRẠNG THÁI KHÔNG TRẢ LỜI
+            // HIỂN THỊ TRẠNG THÁI KHÔNG TRẢ LỜI
             if (user == -1) {
                 TextView tvStatus = new TextView(this);
                 tvStatus.setText("⚠ Bạn chưa trả lời câu này");
@@ -153,19 +153,19 @@ public class DetailActivity extends AppCompatActivity {
         // nền mặc định
         tv.setBackgroundResource(R.drawable.bg_option);
 
-        // ✅ ĐÁP ÁN ĐÚNG
+        //  ĐÁP ÁN ĐÚNG
         if (index == correct) {
             tv.setBackgroundResource(R.drawable.bg_correct);
             tv.setText("✔ " + label + ". " + text);
         }
 
-        // ❌ TRẢ LỜI SAI
+        //  TRẢ LỜI SAI
         else if (user != -1 && index == user) {
             tv.setBackgroundResource(R.drawable.bg_wrong);
             tv.setText("✘ " + label + ". " + text);
         }
 
-        // ⚠️ KHÔNG TRẢ LỜI
+        // ⚠ KHÔNG TRẢ LỜI
         else if (user == -1) {
             tv.setBackgroundResource(R.drawable.bg_option_gray);
         }

@@ -16,9 +16,9 @@ import java.util.Scanner;
 
 public class GeminiApi {
 
-    // 🔑 API key - HÃY THAY KEY MỚI CỦA BẠN VÀO ĐÂY
+    //  API key - HÃY THAY KEY MỚI CỦA BẠN VÀO ĐÂY
     private static final String GEMINI_API_KEY =
-            "AIzaSyCkZadETr4gw3jWfwzo1zemksc4-pWjXmE";
+            "KEY CUA BAN";
 
     private static final String GEMINI_API_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="

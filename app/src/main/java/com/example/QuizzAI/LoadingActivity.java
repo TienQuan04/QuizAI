@@ -31,7 +31,7 @@ public class LoadingActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         loadingText = findViewById(R.id.loadingText);
 
-        // 🔥 kiểm tra mode
+        //  kiểm tra mode
         isGeneratingFeedback = getIntent().getBooleanExtra("isGeneratingFeedback", false);
 
         if (isGeneratingFeedback) {
@@ -40,7 +40,7 @@ public class LoadingActivity extends AppCompatActivity {
             total = getIntent().getIntExtra("total", 0);
             questions = getIntent().getParcelableArrayListExtra("questions");
 
-            // 🔥 FIX: lấy lại subject nếu có
+            //  FIX: lấy lại subject nếu có
             subject = getIntent().getStringExtra("subject");
 
             loadingText.setText("Đang phân tích kết quả bài kiểm tra...");
@@ -56,7 +56,7 @@ public class LoadingActivity extends AppCompatActivity {
                     intent.putParcelableArrayListExtra("questions", questions);
                     intent.putExtra("feedback", feedback);
 
-                    // 🔥 QUAN TRỌNG: truyền subject tiếp
+                    //  QUAN TRỌNG: truyền subject tiếp
                     intent.putExtra("subject", subject);
 
                     startActivity(intent);
@@ -66,12 +66,12 @@ public class LoadingActivity extends AppCompatActivity {
 
         } else {
 
-            // 🔥 NHẬN DATA TỪ MAIN
+            //  NHẬN DATA TỪ MAIN
             subject = getIntent().getStringExtra("subject");
             count = getIntent().getIntExtra("count", 5);
             time = getIntent().getIntExtra("time", 10);
 
-            // 🔥 DEBUG
+            //  DEBUG
             Log.d("LOADING_SUBJECT", "Subject = " + subject);
 
             loadingText.setText("Đang tạo câu hỏi cho bạn...");
@@ -82,12 +82,12 @@ public class LoadingActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(LoadingActivity.this, QuizActivity.class);
 
-                    // 🔥 QUAN TRỌNG NHẤT
+                    //  QUAN TRỌNG NHẤT
                     intent.putExtra("subject", subject);
                     intent.putExtra("count", count);
                     intent.putExtra("time", time);
 
-                    // 🔥 DEBUG
+                    //  DEBUG
                     Log.d("SEND_SUBJECT", "Send = " + subject);
 
                     QuizDataHolder.questions = questions;

@@ -61,7 +61,7 @@ public class QuestionManagementActivity extends AppCompatActivity {
         View view = getLayoutInflater().inflate(R.layout.dialog_add_question, null);
 
         EditText q = view.findViewById(R.id.edtQuestion);
-        EditText subject = view.findViewById(R.id.edtSubject); // 🔥 THÊM
+        EditText subject = view.findViewById(R.id.edtSubject); //  THÊM
         EditText A = view.findViewById(R.id.edtA);
         EditText B = view.findViewById(R.id.edtB);
         EditText C = view.findViewById(R.id.edtC);
@@ -96,7 +96,7 @@ public class QuestionManagementActivity extends AppCompatActivity {
                             C.getText().toString().trim(),
                             D.getText().toString().trim(),
                             Integer.parseInt(correctStr),
-                            subject.getText().toString().trim(), // 🔥 THÊM SUBJECT
+                            subject.getText().toString().trim(), //  THÊM SUBJECT
                             "ADMIN"
                     );
 

@@ -93,7 +93,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
         int totalUser = db.getTotalUsers();
         int totalQuiz = db.getTotalQuizzes();
-        int totalQuestion = db.getTotalQuestionsAdmin(); // ✅ FIX
+        int totalQuestion = db.getTotalQuestionsAdmin(); //  FIX
 
         txtTotalUser.setText(String.valueOf(totalUser));
         txtTotalQuiz.setText(String.valueOf(totalQuiz));

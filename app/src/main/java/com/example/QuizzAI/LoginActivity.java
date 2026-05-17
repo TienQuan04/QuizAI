@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
 
             int userId = db.checkLogin(user, pass);
 
-            // 🔥 ADMIN
+            //  ADMIN
             if (userId == 9999) {
                 Toast.makeText(this, "Đăng nhập Admin", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, AdminDashboardActivity.class));
@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            // 🔒 BỊ KHÓA (FIX CHUẨN)
+            //  BỊ KHÓA (FIX CHUẨN)
             else if (userId == -2) {
 
                 // lấy user_id thật

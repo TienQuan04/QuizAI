@@ -52,26 +52,26 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        // 🔥 chống crash
+        //  chống crash
         if (list == null || list.size() == 0) return;
 
         HistoryItem item = list.get(position);
         if (item == null) return;
 
-        // 📘 SUBJECT
+        //  SUBJECT
         if (item.subject == null || item.subject.trim().isEmpty()) {
             holder.tvSubject.setText("📘 Không rõ chủ đề");
         } else {
             holder.tvSubject.setText("📘 " + item.subject);
         }
 
-        // 🎯 SCORE + %
+        //  SCORE + %
         int total = (item.total == 0) ? 1 : item.total; // tránh chia 0
         double percent = item.score * 100.0 / total;
 
         holder.tvScore.setText("🎯 " + item.score + "/" + item.total + "  •  " + (int) percent + "%");
 
-        // 🎨 màu theo điểm
+        //  màu theo điểm
         if (percent >= 70) {
             holder.tvScore.setTextColor(Color.parseColor("#4CAF50")); // xanh
         } else if (percent >= 40) {
@@ -80,7 +80,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
             holder.tvScore.setTextColor(Color.parseColor("#F44336")); // đỏ
         }
 
-        // 📅 DATE
+        //  DATE
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy • HH:mm", Locale.getDefault());
             holder.tvDate.setText("🕒 " + sdf.format(new Date(item.date)));
@@ -88,7 +88,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
             holder.tvDate.setText("🕒 Không rõ ngày");
         }
 
-        // ✨ animation mượt
+        //  animation mượt
         holder.itemView.setAlpha(0f);
         holder.itemView.setTranslationY(50);
         holder.itemView.animate()
@@ -97,7 +97,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
                 .setDuration(300)
                 .start();
 
-        // 🔥 CLICK AN TOÀN
+        //  CLICK AN TOÀN
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onItemClick(item);

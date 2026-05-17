@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // ✅ CHECK LOGIN (ĐÃ FIX)
+        // CHECK LOGIN
         SharedPreferences pref = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
         boolean isLogin = pref.getBoolean("isLogin", false);
 
