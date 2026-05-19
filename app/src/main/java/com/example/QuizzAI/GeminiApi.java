@@ -18,7 +18,7 @@ public class GeminiApi {
 
     //  API key - HÃY THAY KEY MỚI CỦA BẠN VÀO ĐÂY
     private static final String GEMINI_API_KEY =
-            "KEY CUA BAN";
+            "key cua ban o day";
 
     private static final String GEMINI_API_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="
